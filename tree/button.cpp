@@ -1,53 +1,16 @@
 #include "button.h"
-Button::Button(int x, int y, int w, int h, IMAGE* common, IMAGE* light, IMAGE* press)
+
+Button::Button(int x, int y, int w, int h, IMAGE* common, IMAGE* light, IMAGE* press,void (*ClickEvent)(void))
 {
     this->x = x;
     this->y = y;
-    this->w = w;
-    this->h = h;
+    this->w = common->getwidth();
+    this->h = common->getheight();
     this->common = common;
     this->light = light;
     this->press = press;
-}
-int Button::GetX()
-{
-    return x;
-}
-
-int Button::GetY()
-{
-    return y;
-}
-
-int Button::GetW()
-{
-    return w;
-}
-
-int Button::GetH()
-{
-    return h;
-}
-
-
-void Button::SetX(int x)
-{
-    this->x = x;
-}
-
-void Button::SetY(int y)
-{
-    this->y = y;
-}
-
-void Button::SetW(int w)
-{
-    this->w = w;
-}
-
-void Button::SetH(int h)
-{
-    this->h = h;
+    this->ClickEvent = ClickEvent;
+    this->uiType = UI_COMMON;
 }
 
 //void Button::RestoreColor()
@@ -55,21 +18,23 @@ void Button::SetH(int h)
 //    this->curColor = oldColor;
 //}
 
-void Button::Show(ExMessage msg)
+void Button::Show()
 {
-    if(msg.message == WM_LBUTTONDOWN)
-        switch (msg.message)
-        {
-        case WM_LBUTTONDOWN:
-
+       switch (uiType)
+       {
+        case UI_COMMON:
+            //putimage(x, y, common);
+            drawAlpha(x, y, common);
             break;
-        default:
-            putimage(x, y, light);
+        case UI_LIGHT:
+            //putimage(x, y, light);
+            drawAlpha(x, y, light);
             break;
-        }
-    //setfillcolor(this->curColor);
-    //setlinecolor(BLACK);
-    //fillrectangle(x, y, x + w, y + h);
+        case UI_PRESS:
+            //putimage(x, y, press);
+            drawAlpha(x, y, press);
+            break;
+       }
 
 }
 /// <summary>
@@ -86,3 +51,25 @@ bool Button::InButton(ExMessage msg)
     return false;
 }
 
+void Button::OnEvent(ExMessage msg)
+{
+    if (InButton(msg))
+    {
+        switch (msg.message)
+        {
+        case WM_LBUTTONDOWN:
+            uiType = UI_PRESS;
+            break;
+        case WM_LBUTTONUP:
+            (*ClickEvent)();
+            uiType = UI_LIGHT;
+            break;
+        default:
+            uiType = UI_LIGHT;
+                break;
+        }
+    }
+    else {
+        uiType = UI_COMMON;
+    }
+}

@@ -8,10 +8,12 @@ extern HWND hwnd;
 /// <param name="w">宽度</param>
 /// <param name="h">高度</param>
 /// <param name="color">默认背景颜色</param>
-Edit::Edit(int x, int y, int w, int h, COLORREF color) :rect(x, y, w, h, color), cursor(x, y, 1, h - 4, color)
+Edit::Edit(int x, int y, int w, int h, COLORREF color,inType inputType) :rect(x, y, w, h, color), cursor(x, y, 1, h - 4, color)
 {
     this->inputState = false;
     this->textw = 0;
+    this->inputType = inputType;
+    this->hideTextw = 0;
 }
 
 
@@ -22,16 +24,32 @@ void Edit::Show()
     setbkmode(TRANSPARENT); //设置当前设备图案填充和文字输出时的背景模式 -> 透明
     settextcolor(BLACK);
     textw = textwidth(text.c_str());
-    outtextxy(rect.GetX() + 10, rect.GetY() + 5, text.c_str());
-    //settextstyle(20, 0, L"微软雅黑");
-    //outtextxy(135, 100, L"账号：");
-    //outtextxy(135, 200, L"密码：");
-    //outtextxy(340, 277, L"登录");
-    //outtextxy(220, 277, L"退出");
+    if (inputType == INPUT_PASSOWRD) {
+        hideTextw = textwidth(hideText.c_str());
+    }
+    switch (inputType)
+    {
+    case INPUT_COMMON:
+        outtextxy(rect.GetX() + 10, rect.GetY() + 5, text.c_str());
+        break;
+    case INPUT_PASSOWRD:
+        outtextxy(rect.GetX() + 10, rect.GetY() + 5, hideText.c_str());
+        break;
+    }
     //光标
     if (inputState == true)
     {
-        cursor.SetCurSor(rect.GetX() + textw + 10, rect.GetY() + 2);
+        switch (inputType)
+        {
+        case INPUT_COMMON:
+            cursor.SetCurSor(rect.GetX() + textw + 10, rect.GetY() + 2);
+            break;
+        case INPUT_PASSOWRD:
+            //wstring hide = L"*";
+            cursor.SetCurSor(rect.GetX() + hideTextw + 10, rect.GetY() + 2);
+            break;
+        }
+        //cursor.SetCurSor(rect.GetX() + textw + 10, rect.GetY() + 2);
         cursor.Show();
     }
 }
@@ -78,6 +96,9 @@ void Edit::OnEvent(ExMessage msg)
                 if (!text.empty())
                 {
                     text.pop_back();    //字符串尾部删除
+                    if (inputType == INPUT_PASSOWRD) {   //****
+                        hideText.pop_back();
+                    }
                 }
                 break;
             case '\r':                  //按下回车，确认输入
@@ -87,6 +108,9 @@ void Edit::OnEvent(ExMessage msg)
                 break;
             default:                    //其他字符
                 text.push_back(msg.ch);
+                if (inputType == INPUT_PASSOWRD) {   //****
+                    hideText.push_back(L'*');
+                }
                 break;
             }
         }

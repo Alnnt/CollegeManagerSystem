@@ -80,14 +80,7 @@ bool Rect::InRect(ExMessage msg)
     if (msg.x >= x && msg.x <= x + w && msg.y >= y && msg.y <= y + h)
     {
         return true;
-            //判断鼠标是否在退出按钮中
-            //if (msg.x >= 220 && msg.x < +220 + 40 && msg.y >= 275 && msg.y <= 300) {
-            //    Sleep(3000);
-            //    exit(1);
-            //    return false;
-            //}
     }
     return false;
-    //return (msg.x >= x && msg.x <= x + w && msg.y >= y && msg.y <= y + h) ;
 }
 

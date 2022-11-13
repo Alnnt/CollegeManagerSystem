@@ -6,4 +6,3 @@
 using namespace std;
 #define EDIT_W 200
 #define EDIT_H 25
-

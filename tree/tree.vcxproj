@@ -135,21 +135,32 @@
   <ItemGroup>
     <ClCompile Include="button.cpp" />
     <ClCompile Include="cursor.cpp" />
+    <ClCompile Include="data.cpp" />
+    <ClCompile Include="functions.cpp" />
+    <ClCompile Include="listTable.cpp" />
+    <ClCompile Include="manager.cpp" />
+    <ClCompile Include="manager.h" />
     <ClCompile Include="textbox.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="rect.cpp" />
     <ClCompile Include="timer.cpp" />
     <ClCompile Include="tree.cpp" />
+    <ClCompile Include="VisualEffects.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="button.h" />
     <ClInclude Include="common.h" />
     <ClInclude Include="cursor.h" />
+    <ClInclude Include="data.h" />
+    <ClInclude Include="functions.h" />
     <ClInclude Include="includes.h" />
+    <ClInclude Include="listTable.h" />
     <ClInclude Include="textbox.h" />
     <ClInclude Include="GUI.h" />
     <ClInclude Include="rect.h" />
     <ClInclude Include="timer.h" />
+    <ClInclude Include="UIcontrol.h" />
+    <ClInclude Include="VisualEffects.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
