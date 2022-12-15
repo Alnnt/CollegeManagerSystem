@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\UI">
+      <UniqueIdentifier>{66b0efec-6f1b-4d5f-a172-6a5b2ea81775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI">
+      <UniqueIdentifier>{44e9b4c0-3db7-4dc3-8592-fc4b196c64b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UI\boxes">
+      <UniqueIdentifier>{a9c200a6-b6bc-4a5a-b5bf-c8f910b0794f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UI\boxes">
+      <UniqueIdentifier>{6fc74353-e8af-4d1c-959c-ac9c542a220c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\RSA">
+      <UniqueIdentifier>{08739675-a364-4739-990a-65f798aa617e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="functions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualEffects.cpp">
+      <Filter>源文件\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.h">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="data.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="httplib.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="auth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="treeList.cpp">
+      <Filter>源文件\UI\boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="button.cpp">
+      <Filter>源文件\UI\boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="cursor.cpp">
+      <Filter>源文件\UI\boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="listChosen.cpp">
+      <Filter>源文件\UI\boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="listTable.cpp">
+      <Filter>源文件\UI\boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="rect.cpp">
+      <Filter>源文件\UI\boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="textbox.cpp">
+      <Filter>源文件\UI\boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>源文件\UI\boxes</Filter>
+    </ClCompile>
+    <ClCompile Include="rsa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GUI.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="functions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualEffects.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="data.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UIcontrol.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resources.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="button.h">
+      <Filter>头文件\UI\boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="cursor.h">
+      <Filter>头文件\UI\boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="listChosen.h">
+      <Filter>头文件\UI\boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="listTable.h">
+      <Filter>头文件\UI\boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="textbox.h">
+      <Filter>头文件\UI\boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>头文件\UI\boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="rect.h">
+      <Filter>头文件\UI\boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="modules.h">
+      <Filter>头文件\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="httplib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="auth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="treeList.h">
+      <Filter>头文件\UI\boxes</Filter>
+    </ClInclude>
+    <ClInclude Include="rsas.h">
+      <Filter>头文件\RSA</Filter>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <Filter>头文件\RSA</Filter>
+    </ClInclude>
+    <ClInclude Include="RsaEncode.h">
+      <Filter>头文件\RSA</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
