@@ -1,0 +1,237 @@
+{
+	"gechuang" : 
+	[
+		{
+			"agents" : 
+			[
+				{
+					"email" : "alnnt@mp-gamer.com",
+					"job" : "喵",
+					"name" : "喵喵",
+					"uid" : "2022402987"
+				},
+				{
+					"email" : "yukanjiu@ldazhe.com",
+					"job" : "部长",
+					"name" : "雨看就",
+					"uid" : "2020114514"
+				},
+				{
+					"email" : "konglingyi@163.com",
+					"job" : "副部长",
+					"name" : "孔令一",
+					"uid" : "2021114514"
+				},
+				{
+					"email" : "lkx@lcu-ld.com",
+					"job" : "副部长",
+					"name" : "李奎星",
+					"uid" : "2021114515"
+				},
+				{
+					"email" : "1417291603@qq.com",
+					"job" : "女神",
+					"name" : "仝雨雨",
+					"uid" : "2021666"
+				},
+				{
+					"email" : "2742387982",
+					"job" : "女神",
+					"name" : "王可心",
+					"uid" : "2021888888"
+				},
+				{
+					"email" : "yuxiangyu@miao.cn",
+					"job" : "前端",
+					"name" : "于翔宇",
+					"uid" : "2021qwq"
+				},
+				{
+					"email" : "gaorunze@163.com",
+					"job" : "前端",
+					"name" : "高润泽",
+					"uid" : "202112345"
+				},
+				{
+					"email" : "wyk@163.com",
+					"job" : "后端",
+					"name" : "吴宜柯",
+					"uid" : "2021666666"
+				},
+				{
+					"email" : "wufujin@hansome.net",
+					"job" : "后端",
+					"name" : "吴复金",
+					"uid" : "2021666666"
+				},
+				{
+					"email" : "qwqQAQ@123.com",
+					"job" : "卷",
+					"name" : "卢纪元",
+					"uid" : "2021qwq"
+				},
+				{
+					"email" : "awdawd@163.com",
+					"job" : "部员",
+					"name" : "王浩",
+					"uid" : "123156"
+				},
+				{
+					"email" : "awdawdwa@163.com",
+					"job" : "部员",
+					"name" : "程路豪",
+					"uid" : "1234564"
+				},
+				{
+					"email" : "javascript@wudi.say",
+					"job" : "前端",
+					"name" : "巩礼俊",
+					"uid" : "2021qwq66"
+				},
+				{
+					"email" : "beautiful@gril.com",
+					"job" : "美少女",
+					"name" : "崔世轩",
+					"uid" : "2022401234"
+				},
+				{
+					"email" : "delicious@food.com",
+					"job" : "奶糖",
+					"name" : "刘乃堂",
+					"uid" : "2022406666"
+				},
+				{
+					"email" : "adwwadaw@163.com",
+					"job" : "部员",
+					"name" : "付聪政",
+					"uid" : "2022406546"
+				},
+				{
+					"email" : "sxy@daw.com",
+					"job" : "部员",
+					"name" : "宋欣宇",
+					"uid" : "114514"
+				},
+				{
+					"email" : "zhaoqixin@qq.com",
+					"job" : "部员",
+					"name" : "赵淇心",
+					"uid" : "2022409876"
+				},
+				{
+					"email" : "418564651@qq.com",
+					"job" : "部员",
+					"name" : "房金秋",
+					"uid" : "2022404532"
+				},
+				{
+					"email" : "dawdawd@qwq.com",
+					"job" : "部员",
+					"name" : "刘卫路",
+					"uid" : "2022402134"
+				}
+			],
+			"name" : "研发室"
+		},
+		{
+			"agents" : 
+			[
+				{
+					"email" : "Elaina@Elaina.com",
+					"job" : "伊蕾娜",
+					"name" : "王宁",
+					"uid" : "2021Elaina"
+				},
+				{
+					"email" : "pwd@ggmm.go",
+					"job" : "装萌新",
+					"name" : "彭文登",
+					"uid" : "2021qwq"
+				},
+				{
+					"email" : "loli@163.com",
+					"job" : "dogs",
+					"name" : "安俊宇",
+					"uid" : "2022402985"
+				},
+				{
+					"email" : "green@163.com",
+					"job" : "dog",
+					"name" : "左富江",
+					"uid" : "2022402985"
+				}
+			],
+			"name" : "ACM"
+		}
+	],
+	"shelian" : 
+	[
+		{
+			"agents" : 
+			[
+				{
+					"email" : "2742387982@qq.com",
+					"job" : "聊大百灵鸟",
+					"name" : "王可心",
+					"uid" : "lcuBird"
+				},
+				{
+					"email" : "dfgfdgdf",
+					"job" : "聊大金嗓子",
+					"name" : "可心王",
+					"uid" : "456345"
+				}
+			],
+			"name" : "靓声部"
+		},
+		{
+			"agents" : 
+			[
+				{
+					"email" : "wdsadaw",
+					"job" : "部长",
+					"name" : "郭德纲",
+					"uid" : "2000123456"
+				}
+			],
+			"name" : "口才部"
+		}
+	],
+	"xueshenghui" : 
+	[
+		{
+			"agents" : 
+			[
+				{
+					"email" : "212356a@163.com",
+					"job" : "部员",
+					"name" : "张三",
+					"uid" : "123456"
+				},
+				{
+					"email" : "163@163.com",
+					"job" : "职位",
+					"name" : "测试",
+					"uid" : "123456"
+				}
+			],
+			"name" : "自律部"
+		},
+		{
+			"agents" : null,
+			"name" : "宿管部"
+		},
+		{
+			"agents" : 
+			[
+				{
+					"email" : "643637007@qq.com",
+					"job" : "副主任",
+					"name" : "杨燕文",
+					"uid" : "643637007"
+				}
+			],
+			"name" : "办公室"
+		}
+	]
+}
