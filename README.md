@@ -3,6 +3,7 @@
 <video width="100%" controls>
       <source type="video/mp4" src="introduce.mp4">
 </video>
+[![](splash.png)](introduce.mp4)
 
 
 
