@@ -1,3 +1,11 @@
+# 介绍视频
+
+<video width="100%" controls>
+      <source type="video/mp4" src="introduce.mp4">
+</video>
+
+
+
 # 实现功能
 
 1、核心功能全部实现
