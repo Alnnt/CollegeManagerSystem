@@ -11,7 +11,7 @@ static function sendemail($fajianren,$fajianrenname,$shoujianren,$shoujianrennam
 $mail = new PHPMailer(true); 
 try {
     //服务器配置
-$mailconfig=json_decode('{"Host":"smtp.exmail.qq.com","Username":"alnnt@mp-gamer.com","Password":"qQ1138745158","SMTPSecure":"ssl","Port":"465"}');
+$mailconfig=json_decode('{"Host":"smtp.exmail.qq.com","Username":"test@xxx.com","Password":"test","SMTPSecure":"ssl","Port":"465"}');
     $mail->CharSet ="UTF-8";                     //设定邮件编码
     $mail->SMTPDebug = 0;                        // 调试模式输出
     $mail->isSMTP();                             // 使用SMTP
